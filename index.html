@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Time</title>
+  
+  <style>
+  *{
+    text-align: center:
+  }
+  body{
+    color: black;
+  }
+    
+  </style>
+  
+</head>
+
+<body>
+  <center>
+  <h1>👋Welcome👋</h1>
+  
+  <br>
+  
+  <br>
+  
+  <div class="timebox">
+    
+   
+    <p id="indiaTime"></p>
+    <p id="londonTime"></p>
+    
+  </div>
+  </center>
+  <script>
+  
+  //window.alert('Small Gift For You Lassi')
+  
+  function india(){
+ document.getElementById("indiaTime").innerHTML = '<h4>🇮🇳 India Time : ' + new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata',timeStyle:'medium',hourCycle:'h12'}) + '</h4>'
+  }
+  setInterval(india,1000)
+  
+  function london(){
+ document.getElementById("londonTime").innerHTML = '<h4>🇬🇧 London Time : ' + new Date().toLocaleString('en-IN',{timeZone:'Europe/London',timeStyle:'medium',hourCycle:'h12'})+'</h4>'
+  }
+  setInterval(london,1000)
+    
+  </script>
+  
+  
+</body>
+</html>
